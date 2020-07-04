@@ -57,19 +57,5 @@ jobs:
       with:
         # Remote host(s) to connect to
         hosts: 45.77.39.186
-        # One or multiple commands to run on the remote host(s)
-#         commands: 
-        # Remote user to connect with
         user: taqi20
-        # Remote port to connect to
-#         port: # optional, default is 22
-        # Private SSH key to connect with
-#         private_key: # optional
-        # Password to connect with
         password: kopigulabatu
-        # Known hosts keys that SSH can rely on to connect to the remote host(s)
-#         known_hosts: # optional
-        # Knock sequence performed onto the remote host before connecting to it
-#         knock_sequence: # optional
-        # SSH config to use to connect to the remote host(s)
-#         ssh_config: # optional
