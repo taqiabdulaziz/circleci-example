@@ -46,7 +46,7 @@ jobs:
       with:
         # Command to execute on the remote server.
 #         command: sh deploy.sh || [ $? = 1 ]
-        command: echo "HAAHHAHAHHAHAH"
+        command: echo "HAAHHAHAHHAHAH" && exit
         # Hostname or IP address of the server.
         host: 45.77.39.186
         # Username for authentication.
