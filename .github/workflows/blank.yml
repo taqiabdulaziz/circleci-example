@@ -33,6 +33,13 @@ jobs:
         password: jimbaran1
         repository: taqiprojekan/dibersihin-backend-dev
         tags: latest
+        
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: taqi20@45.77.39.186
+        password: kopigulabatu
+        script: ssh deploy.sh
 
 
 
