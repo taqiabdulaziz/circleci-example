@@ -51,4 +51,4 @@ jobs:
         # Username for authentication.
         user: taqi20
         pass: kopigulabatu
-        args: -tt
+        args: "-tt -vvv"
