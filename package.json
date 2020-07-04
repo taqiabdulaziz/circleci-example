@@ -1,0 +1,34 @@
+{
+  "name": "sekeleton-nodejs-experes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "axios-logger": "^2.3.1",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.8",
+    "express": "^4.17.1",
+    "express-enrouten": "^1.3.0",
+    "express-validator": "^6.6.0",
+    "fast-safe-stringify": "^2.0.7",
+    "lodash": "^4.17.15",
+    "nconf": "^0.10.0",
+    "sequelize": "^6.2.4",
+    "sequelize-cli": "^6.1.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
