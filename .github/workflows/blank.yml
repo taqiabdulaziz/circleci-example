@@ -41,18 +41,35 @@ jobs:
 #         username: taqi20
 #         password: kopigulabatu
 #         script: sh deploy.sh
-    - name: Remote SSH Commands
-      uses: fifsky/ssh-action@v0.0.4
+#     - name: Remote SSH Commands
+#       uses: fifsky/ssh-action@v0.0.4
+#       with:
+#         # Command to execute on the remote server.
+#         command: sh deploy.sh
+#         # Hostname or IP address of the server.
+#         host: 45.77.39.186
+#         # Username for authentication.
+#         user: taqi20
+#         pass: kopigulabatu
+#         args: -tt
+    - name: SSH command runner
+      uses: Evaneos/ssh-action@v0.1.0
       with:
-        # Command to execute on the remote server.
-        command: sh deploy.sh
-        # Hostname or IP address of the server.
-        host: 45.77.39.186
-        # Username for authentication.
+        # Remote host(s) to connect to
+        hosts: 45.77.39.186
+        # One or multiple commands to run on the remote host(s)
+#         commands: 
+        # Remote user to connect with
         user: taqi20
-        pass: kopigulabatu
-        args: -tt
-
-
-
-
+        # Remote port to connect to
+#         port: # optional, default is 22
+        # Private SSH key to connect with
+#         private_key: # optional
+        # Password to connect with
+        password: kopigulabatu
+        # Known hosts keys that SSH can rely on to connect to the remote host(s)
+#         known_hosts: # optional
+        # Knock sequence performed onto the remote host before connecting to it
+#         knock_sequence: # optional
+        # SSH config to use to connect to the remote host(s)
+#         ssh_config: # optional
