@@ -37,7 +37,6 @@ jobs:
       with:
         username: taqiprojekan
         password: jimbaran1
-        registry: http://45.77.39.186:5000/
         repository: taqiprojekan/dibersihin-backend-dev
         tags: latest
         
