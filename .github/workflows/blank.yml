@@ -20,28 +20,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a set of commands using the runners shell
-#     - name: Moving config data
-#       run: |
-#         mv config.template.json config.json
-#         sed -i 's|__SERVICE_NAME__|postgres://smg_app_arms:Password03!@35.247.146.32:5432/SMG_DEV|g' config.json
-
-#     - name: Build and push Docker images
-#       uses: docker/build-push-action@v1.1.0
-#       with:
-#         username: taqiprojekan
-#         password: jimbaran1
-#         repository: taqiprojekan/dibersihin-backend-dev
-#         tags: latest
-        
-#     - name: executing remote ssh commands using password
-#       uses: appleboy/ssh-action@master
-#       with:
-#         host: 45.77.39.186
-#         username: taqi20
-#         password: kopigulabatu
-#         script: sh deploy.sh
-    - name: Remote SSH Commands
+    - name: Deploying to VPS
       uses: fifsky/ssh-action@v0.0.4
       with:
         # Command to execute on the remote server.
