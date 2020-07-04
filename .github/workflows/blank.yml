@@ -40,7 +40,7 @@ jobs:
         host: 45.77.39.186
         username: taqi20
         password: kopigulabatu
-        script: ssh deploy.sh
+        script: sh deploy.sh
 
 
 
