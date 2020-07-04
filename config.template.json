@@ -1,0 +1,16 @@
+{
+  "port": "__PORT__",
+  "service-name": "__SERVICE_NAME__",
+
+  "log-dir": "logs",
+
+  "db": {
+    "database": "__DB_NAME__",
+    "username": "__DB_USERNAME__",
+    "password": "__DB_PASSWORD__",
+    "host": "__DB_HOST__",
+    "port": "__DB_PORT__",
+    "dialect": "__DB_DIALECT__"
+  }
+
+}
