@@ -45,7 +45,7 @@ jobs:
       uses: fifsky/ssh-action@v0.0.4
       with:
         # Command to execute on the remote server.
-        command: sh deploy.sh
+        command: sh deploy.sh || [ $? = 1 ]
         # Hostname or IP address of the server.
         host: 45.77.39.186
         # Username for authentication.
